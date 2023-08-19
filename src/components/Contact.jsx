@@ -7,6 +7,10 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
+
+//template_1yxsv6r
+//service_ngi8vgo
+//public key JYEOq-Xot02kxtJup
 const Contact = () => {
   const [form, setForm] = useState({
     name: '',
@@ -14,8 +18,38 @@ const Contact = () => {
     message:''
   })
   const [loading, setLoading] = useState(false);
-  const handleChange = (e) => { }
-  const handleSubmit = (e) => { }
+  const handleChange = (e) => { 
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  }
+
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs.send(
+      'service_ngi8vgo',
+      'template_1yxsv6r',
+      {
+        from_name: form.name,
+        to_name: 'Amr',
+        from_email: form.email,
+        to_email: 'amrbahy1996@gmail.com',
+        message: form.message,
+      },
+      'JYEOq-Xot02kxtJup'
+    ).then(() => {
+      setLoading(false);
+      alert('Thank you');
+      setForm({
+        name: '', email: '', message: ''
+      })
+    }, (error) => {
+      console.log("FAILED", error);
+      setLoading(false);
+      alert('Somthing went wrong.')
+    })
+  }
   const formRef = useRef();
 
   return (
