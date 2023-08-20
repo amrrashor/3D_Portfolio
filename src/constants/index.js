@@ -1,7 +1,6 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
@@ -11,18 +10,18 @@ import {
   redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  ostello,
   carrent,
-  jobit,
-  tripguide,
   threejs,
+  bag,
+  nextjs,
+  bootstrap,
+  sass,
+  styledcomponents,
+  jest,
+  web2
 } from "../assets";
 
 export const navLinks = [
@@ -42,7 +41,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Front-end Developer",
     icon: web,
   },
   {
@@ -50,12 +49,8 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Translator",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -77,24 +72,40 @@ const technologies = [
     icon: typescript,
   },
   {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
     name: "React JS",
     icon: reactjs,
+  },
+  {
+    name: "nextjs",
+    icon: nextjs,
   },
   {
     name: "Redux Toolkit",
     icon: redux,
   },
   {
+    name: "SASS",
+    icon: sass,
+  },
+  {
+    name: "Styled Components",
+    icon: styledcomponents,
+  },
+  {
+    name: "Jest",
+    icon: jest,
+  },
+  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Bootstrap",
+    icon: bootstrap,
   },
   {
     name: "Three JS",
@@ -108,63 +119,35 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Front-end Developer",
+    company_name: "Ostello",
+    company_url:'https://www.ostello.co.in/',
+    icon: ostello,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "January 2022 - June 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Developing and maintaining web applications using React.js.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Front-end / React Native Developer",
+    company_name: "Beyond Apps Group",
+    company_url:'https://www.beyond-apps-group.com/',
+    icon: bag,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "June 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Creating user interfaces using React.js and React Native frameworks to build web and mobile applications respectively.",
+      "Creating modular components that can be easily integrated into different parts of the application.",
+      "Minimizing rendering and re-rendering, optimizing component life cycles, and implementing performance best practices to ensure fast and efficient application performance.",
+      "Writing unit tests and performing debugging to identify and fix issues within the codebase.",
     ],
   },
 ];
@@ -198,67 +181,34 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Car Shop",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to search, car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
       {
-        name: "react",
+        name: "nextjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "rapid_api",
         color: "green-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "headless_ui",
+        color: "blue-text-gradient",
+      },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/amrrashor/car-shop/tree/master",
+    url:'https://car-shop-one.vercel.app/',
   },
 ];
 

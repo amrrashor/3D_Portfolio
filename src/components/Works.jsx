@@ -2,7 +2,7 @@ import React from 'react'
 import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from '../style';
-import { github } from '../assets'
+import { github, web2 } from '../assets'
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
@@ -17,11 +17,11 @@ const ProjectCard = ({ project, index }) => {
         <div className='relative w-full h-[230px]'>
           <img src={project.image} alt={project.name} className='object-cover w-full h-full rounded-2xl' />
           <div className='absolute inset-0 flex justify-end m-3 '>
-            <div onClick={() => window.open(project.source_code_link, '_blank')} className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
+            <div onClick={() => window.open(project.source_code_link, '_blank')} className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer mr-2'>
               <img src={github} alt='github' className='h-1/2 w-1/2  object-contain' />
             </div>
-            <div onClick={() => window.open(project.source_code_link, '_blank')} className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
-              <img src={github} alt='github' className='h-1/2 w-1/2  object-contain' />
+            <div onClick={() => window.open(project.url, '_blank')} className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
+              <img src={web2} alt='url' className='h-1/2 w-1/2  object-contain' />
             </div>
           </div>
         </div>

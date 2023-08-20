@@ -37,10 +37,10 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ex tenetur atque temporibus placeat quis repellendus, impedit natus sequi optio laboriosam fugiat vitae esse laudantium aliquam, inventore expedita. Qui, odit?
+        Hey there! I'm a passionate Front-End and React Native Developer with a knack for transforming designs into interactive digital experiences. I'm all about creating user interfaces that not only look amazing but also function flawlessly. Armed with a strong foundation in HTML, CSS, and JavaScript, coupled with an in-depth understanding of React and React Native, I've been weaving together the magic of code and design to deliver top-notch web and mobile applications.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-20 flex flex-wrap gap-10 justify-evenly'>
         {services.map((service, index) => (
           <ServiceCard
             key={service.title}

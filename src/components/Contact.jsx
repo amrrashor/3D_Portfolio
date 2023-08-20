@@ -7,10 +7,6 @@ import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 
-
-//template_1yxsv6r
-//service_ngi8vgo
-//public key JYEOq-Xot02kxtJup
 const Contact = () => {
   const [form, setForm] = useState({
     name: '',
