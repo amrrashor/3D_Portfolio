@@ -9,7 +9,8 @@ This documentation provides an overview of the setup and components used in buil
 3. **Installation and Setup**
 4. **Components**
 5. **Customization**
-6. **Usage and Deployment**
+6. **Technologies Used**
+7. **Usage and Deployment**
 
 ## 1. Introduction
 
@@ -65,7 +66,23 @@ The contact section allows visitors to get in touch with you. You can include a 
 
  Following projects showcases my skills and experience through real-world examples of my work.
 
-## 5. Usage and Deployment
+
+### 5. Technologies Used
+The following technologies and tools are used in this project:
+
+1. React: A JavaScript library for building user interfaces.
+2. Vite: A fast build tool and development server.
+3. React Router DOM: For routing within the website.
+4. React Three Fiber: A React renderer for three.js, enabling 3D graphics.
+5. Framer Motion: For adding animations to components.
+6. EmailJS: For sending emails from the website.
+7. React Tilt: A React wrapper for the Tilt.js library.
+8. React Vertical Timeline Component: For creating interactive timelines.
+9. Three.js: A JavaScript library for 3D graphics.
+
+
+## 6. Usage and Deployment
+
 
 To run the website locally for testing and development, use the following command:
 
